@@ -14,7 +14,7 @@ const Header: React.FC = () => {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <div className="text-2xl font-bold text-blue-600">
-            WebDev Pro
+            Elevate Web Solutions
           </div>
 
           {/* Desktop Navigation */}

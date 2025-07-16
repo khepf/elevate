@@ -53,7 +53,7 @@ const About: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20">
           <div>
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              About WebDev Pro
+              About Elevate Web Solutions
             </h2>
             <p className="text-xl text-gray-600 mb-6">
               We're a passionate team of web developers and designers dedicated to creating 

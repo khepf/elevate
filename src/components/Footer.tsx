@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
           {/* Company Info */}
           <div>
             <h3 className="text-2xl font-bold text-blue-400 mb-4">
-              WebDev Pro
+              Elevate Web Solutions
             </h3>
             <p className="text-gray-400 mb-6">
               Creating exceptional web experiences that drive business growth. 
@@ -112,7 +112,7 @@ const Footer: React.FC = () => {
 
         <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
-            © 2025 WebDev Pro. All rights reserved.
+            © 2025 Elevate Web Solutions. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="text-gray-400 hover:text-blue-400 transition duration-300 text-sm">

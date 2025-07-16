@@ -1,4 +1,4 @@
-# WebDev Pro - Company Website
+# Elevate Web Solutions - Company Website
 
 A modern, responsive website for a 3rd party web development company built with React, TypeScript, and Vite.
 
