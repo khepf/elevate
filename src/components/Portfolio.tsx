@@ -1,12 +1,11 @@
 import React from 'react'
-import { ExternalLink, Github } from 'lucide-react'
 
 const Portfolio: React.FC = () => {
   const projects = [
     {
       title: "E-Commerce Platform",
       description: "Modern e-commerce solution with React, Node.js, and MongoDB. Features include real-time inventory, secure payments, and admin dashboard.",
-      image: "https://via.placeholder.com/400x300/3B82F6/FFFFFF?text=E-Commerce+Platform",
+      image: "/ecommerce-platform.jpg",
       technologies: ["React", "Node.js", "MongoDB", "Stripe"],
       demoUrl: "#",
       codeUrl: "#"
@@ -14,7 +13,7 @@ const Portfolio: React.FC = () => {
     {
       title: "Corporate Website",
       description: "Professional corporate website with CMS integration, SEO optimization, and responsive design for a Fortune 500 company.",
-      image: "https://via.placeholder.com/400x300/10B981/FFFFFF?text=Corporate+Website",
+      image: "/corporate-website.jpg",
       technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Prisma"],
       demoUrl: "#",
       codeUrl: "#"
@@ -22,7 +21,7 @@ const Portfolio: React.FC = () => {
     {
       title: "SaaS Dashboard",
       description: "Analytics dashboard for SaaS companies with real-time data visualization, user management, and billing integration.",
-      image: "https://via.placeholder.com/400x300/8B5CF6/FFFFFF?text=SaaS+Dashboard",
+      image: "/saas-dashboard.jpg",
       technologies: ["Vue.js", "Express", "PostgreSQL", "Chart.js"],
       demoUrl: "#",
       codeUrl: "#"
@@ -30,7 +29,7 @@ const Portfolio: React.FC = () => {
     {
       title: "Restaurant App",
       description: "Full-stack restaurant management app with online ordering, table reservations, and kitchen management system.",
-      image: "https://via.placeholder.com/400x300/F59E0B/FFFFFF?text=Restaurant+App",
+      image: "/restaurant-app.jpg",
       technologies: ["React Native", "Firebase", "Node.js", "Socket.io"],
       demoUrl: "#",
       codeUrl: "#"
@@ -38,7 +37,7 @@ const Portfolio: React.FC = () => {
     {
       title: "Real Estate Platform",
       description: "Property listing platform with advanced search, virtual tours, and integrated CRM for real estate agents.",
-      image: "https://via.placeholder.com/400x300/EF4444/FFFFFF?text=Real+Estate+Platform",
+      image: "/realestate-platform.jpg",
       technologies: ["Angular", "Django", "PostgreSQL", "AWS"],
       demoUrl: "#",
       codeUrl: "#"
@@ -46,7 +45,7 @@ const Portfolio: React.FC = () => {
     {
       title: "Educational Platform",
       description: "Online learning platform with video streaming, progress tracking, and interactive quizzes for educational institutions.",
-      image: "https://via.placeholder.com/400x300/06B6D4/FFFFFF?text=Educational+Platform",
+      image: "/educational-platform.jpg",
       technologies: ["React", "Express", "MongoDB", "WebRTC"],
       demoUrl: "#",
       codeUrl: "#"
@@ -69,33 +68,37 @@ const Portfolio: React.FC = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 group"
+              className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 group h-96"
             >
-              <div className="relative overflow-hidden">
+              <div className="relative overflow-hidden h-48 group-hover:h-full transition-all duration-300">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-48 object-cover group-hover:scale-105 transition duration-300"
+                  className="w-full h-full object-cover group-hover:scale-105 transition duration-300"
                 />
-                <div className="absolute inset-0 bg-blue-600 opacity-0 group-hover:opacity-90 transition duration-300 flex items-center justify-center">
-                  <div className="flex space-x-4">
-                    <a
-                      href={project.demoUrl}
-                      className="bg-white text-blue-600 p-3 rounded-full hover:bg-gray-100 transition duration-300"
-                    >
-                      <ExternalLink className="h-5 w-5" />
-                    </a>
-                    <a
-                      href={project.codeUrl}
-                      className="bg-white text-blue-600 p-3 rounded-full hover:bg-gray-100 transition duration-300"
-                    >
-                      <Github className="h-5 w-5" />
-                    </a>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition duration-300">
+                  <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                    <h3 className="text-xl font-semibold mb-2">
+                      {project.title}
+                    </h3>
+                    <p className="text-sm mb-3 text-gray-200">
+                      {project.description}
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      {project.technologies.map((tech, techIndex) => (
+                        <span
+                          key={techIndex}
+                          className="bg-white/20 text-white px-2 py-1 rounded-full text-xs font-medium backdrop-blur-sm"
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
                   </div>
                 </div>
               </div>
               
-              <div className="p-6">
+              <div className="p-6 group-hover:opacity-0 group-hover:h-0 transition-all duration-300 overflow-hidden">
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">
                   {project.title}
                 </h3>
@@ -115,12 +118,6 @@ const Portfolio: React.FC = () => {
               </div>
             </div>
           ))}
-        </div>
-
-        <div className="text-center mt-12">
-          <button className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-300">
-            View All Projects
-          </button>
         </div>
       </div>
     </section>

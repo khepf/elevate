@@ -27,21 +27,21 @@ const About: React.FC = () => {
 
   const teamMembers = [
     {
-      name: "Sarah Johnson",
+      name: "Josh Miller",
       role: "Lead Developer",
-      image: "https://via.placeholder.com/200x200/3B82F6/FFFFFF?text=SJ",
+      image: "/lead-developer.jpg",
       bio: "Full-stack developer with 8+ years of experience in React, Node.js, and cloud technologies."
     },
     {
-      name: "Mike Chen",
+      name: "Sarah Alderman",
       role: "UI/UX Designer",
-      image: "https://via.placeholder.com/200x200/10B981/FFFFFF?text=MC",
+      image: "/ui-ux-designer.jpg",
       bio: "Creative designer focused on user experience and modern design principles."
     },
     {
-      name: "David Rodriguez",
+      name: "David Lacinek",
       role: "Project Manager",
-      image: "https://via.placeholder.com/200x200/8B5CF6/FFFFFF?text=DR",
+      image: "/project-manager.jpg",
       bio: "Experienced project manager ensuring timely delivery and client satisfaction."
     }
   ]

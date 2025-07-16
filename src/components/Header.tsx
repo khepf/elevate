@@ -11,13 +11,13 @@ const Header: React.FC = () => {
   return (
     <header className="bg-white shadow-lg fixed w-full top-0 z-50">
       <div className="container mx-auto">
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="flex items-center py-2 px-4">
+          <div className="flex items-center py-2 px-4 relative z-10">
             <img 
               src="/elevate-logo.jpg" 
               alt="Elevate Web Solutions" 
-              className="h-24 w-auto"
+              className="h-28 w-auto relative top-8"
             />
           </div>
 
