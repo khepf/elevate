@@ -26,17 +26,17 @@ const Contact: React.FC = () => {
     setSubmitStatus('idle')
 
     try {
-      // Replace these with your actual EmailJS credentials
-      const serviceID = 'service_by66ara'
-      const templateID = 'template_k8kgzdk'
-      const publicKey = 'WKUIyR8tajqUiZWAs'
+      // EmailJS credentials from environment variables
+      const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID
+      const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID
+      const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY
 
       const templateParams = {
         from_name: formData.name,
         from_email: formData.email,
         subject: formData.subject,
         message: formData.message,
-        to_email: 'elevatesalesandinquiries@gmail.com'
+        to_email: import.meta.env.VITE_CONTACT_EMAIL
       }
 
       await emailjs.send(serviceID, templateID, templateParams, publicKey)
