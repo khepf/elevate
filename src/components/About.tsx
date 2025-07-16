@@ -1,27 +1,22 @@
 import React from 'react'
-import { Award, Users, Clock, Target } from 'lucide-react'
+import { Award, Users, Clock } from 'lucide-react'
 
 const About: React.FC = () => {
   const stats = [
     {
       icon: <Users className="h-8 w-8" />,
-      number: "500+",
+      number: "100+",
       label: "Happy Clients"
     },
     {
       icon: <Award className="h-8 w-8" />,
-      number: "1000+",
+      number: "500+",
       label: "Projects Completed"
     },
     {
       icon: <Clock className="h-8 w-8" />,
-      number: "5+",
+      number: "15+",
       label: "Years Experience"
-    },
-    {
-      icon: <Target className="h-8 w-8" />,
-      number: "98%",
-      label: "Success Rate"
     }
   ]
 
@@ -94,7 +89,7 @@ const About: React.FC = () => {
                 </p>
                 <div className="flex items-center">
                   <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
-                    <Target className="h-6 w-6 text-blue-600" />
+                    <Award className="h-6 w-6 text-blue-600" />
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900">Quality First</h4>
@@ -107,7 +102,7 @@ const About: React.FC = () => {
         </div>
 
         {/* Stats Section */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
           {stats.map((stat, index) => (
             <div key={index} className="text-center">
               <div className="text-blue-600 mb-4 flex justify-center">
