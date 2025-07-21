@@ -22,13 +22,13 @@ const About: React.FC = () => {
 
   const teamMembers = [
     {
-      name: "Michael Chen",
+      name: "Michael Healy",
       role: "Lead Web Developer",
       image: "/lead-developer.jpg",
       bio: "Senior web developer with 10+ years of experience in React, Node.js, and modern web technologies. Specializes in scalable web applications."
     },
     {
-      name: "Jennifer Rodriguez",
+      name: "Jennifer Whitmore",
       role: "Analytics & SEO Specialist",
       image: "/ui-ux-designer.jpg",
       bio: "Expert in Google Analytics implementation, SEO optimization, and digital marketing strategies to maximize online visibility and conversions."

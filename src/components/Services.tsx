@@ -1,43 +1,25 @@
 import React from 'react'
-import { Code, Smartphone, Globe, Zap, Shield, Users } from 'lucide-react'
+import { Code, Settings, BarChart } from 'lucide-react'
 
 const Services: React.FC = () => {
   const services = [
     {
       icon: <Code className="h-8 w-8" />,
-      title: "Web Development",
-      description: "Custom websites and web applications built with modern technologies and industry best practices.",
-      features: ["React & Modern Frameworks", "Backend Development", "Database Integration", "API Development"]
+      title: "Website Building (Web Development)",
+      description: "Professional website design and development services to establish your online presence and grow your business.",
+      features: ["Custom Website Design", "Responsive Mobile-First Development", "E-commerce & Online Stores", "Content Management Systems", "SEO Optimization", "Fast Loading & Secure Sites"]
     },
     {
-      icon: <Smartphone className="h-8 w-8" />,
-      title: "Mobile-First Solutions",
-      description: "Responsive designs optimized for all devices, ensuring seamless user experiences across platforms.",
-      features: ["Responsive Design", "Mobile Optimization", "Performance Tuning", "Cross-Platform"]
+      icon: <Settings className="h-8 w-8" />,
+      title: "Custom Software Solutions",
+      description: "Tailored software development to solve your unique business challenges and streamline operations.",
+      features: ["Business Process Automation", "Custom Database Solutions", "API Development & Integration", "Desktop & Web Applications", "System Integration", "Ongoing Support & Maintenance"]
     },
     {
-      icon: <Globe className="h-8 w-8" />,
-      title: "E-Commerce Solutions",
-      description: "Complete online business solutions with secure payment processing and comprehensive management tools.",
-      features: ["Online Stores", "Payment Integration", "Inventory Management", "Analytics Dashboard"]
-    },
-    {
-      icon: <Zap className="h-8 w-8" />,
-      title: "Technical Consulting",
-      description: "Expert guidance on technology decisions, system architecture, and digital transformation strategies.",
-      features: ["Technology Assessment", "System Architecture", "Performance Analysis", "Strategic Planning"]
-    },
-    {
-      icon: <Shield className="h-8 w-8" />,
-      title: "Maintenance & Support",
-      description: "Ongoing technical support, security updates, and system maintenance to ensure optimal performance.",
-      features: ["Security Updates", "System Monitoring", "Regular Maintenance", "Technical Support"]
-    },
-    {
-      icon: <Users className="h-8 w-8" />,
-      title: "Training & Support",
-      description: "Comprehensive training and ongoing support to help your team maximize technology investments.",
-      features: ["Staff Training", "Documentation", "Ongoing Support", "Best Practices"]
+      icon: <BarChart className="h-8 w-8" />,
+      title: "Google Analytics Setup",
+      description: "Complete Google Analytics configuration and training to track your website performance and understand your customers.",
+      features: ["Google Analytics 4 Setup", "Conversion Tracking", "Custom Dashboard Creation", "Goal & Event Configuration", "Monthly Reporting", "Data Analysis Training"]
     }
   ]
 
@@ -49,11 +31,11 @@ const Services: React.FC = () => {
             Our Services
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            We offer comprehensive technical services to help Cincinnati businesses thrive in the digital age
+            We specialize in three core services: building professional websites, developing custom software solutions, and setting up Google Analytics to track your success
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <div
               key={index}
