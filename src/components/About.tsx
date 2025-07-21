@@ -22,22 +22,22 @@ const About: React.FC = () => {
 
   const teamMembers = [
     {
-      name: "Josh Miller",
-      role: "Lead Developer",
+      name: "Michael Chen",
+      role: "Lead Web Developer",
       image: "/lead-developer.jpg",
-      bio: "Full-stack developer with 8+ years of experience in React, Node.js, and cloud technologies."
+      bio: "Senior web developer with 10+ years of experience in React, Node.js, and modern web technologies. Specializes in scalable web applications."
     },
     {
-      name: "Sarah Alderman",
-      role: "UI/UX Designer",
+      name: "Jennifer Rodriguez",
+      role: "Analytics & SEO Specialist",
       image: "/ui-ux-designer.jpg",
-      bio: "Creative designer focused on user experience and modern design principles."
+      bio: "Expert in Google Analytics implementation, SEO optimization, and digital marketing strategies to maximize online visibility and conversions."
     },
     {
-      name: "David Lacinek",
-      role: "Project Manager",
+      name: "Robert Thompson",
+      role: "Software Solutions Manager",
       image: "/project-manager.jpg",
-      bio: "Experienced project manager ensuring timely delivery and client satisfaction."
+      bio: "Dedicated to delivering custom software solutions and managing digital presence projects from conception to successful implementation."
     }
   ]
 
@@ -48,33 +48,34 @@ const About: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20">
           <div>
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              About Elevate Web Solutions
+              About Queen City Technical Services
             </h2>
             <p className="text-xl text-gray-600 mb-6">
-              We're a passionate team of web developers and designers dedicated to creating 
-              exceptional digital experiences that drive business growth.
+              We're a dedicated team of web developers and digital specialists focused on helping businesses 
+              establish and grow their online presence through custom software, analytics, and comprehensive digital solutions.
             </p>
             <p className="text-gray-600 mb-8">
-              Since 2019, we've been helping businesses of all sizes establish their online 
-              presence with modern, scalable, and user-friendly websites. Our team combines 
-              technical expertise with creative vision to deliver solutions that exceed expectations.
+              Since our founding, we've been committed to helping businesses leverage the power of the internet 
+              to achieve their goals. Our expertise spans web development, custom software development, 
+              Google Analytics implementation, SEO, and complete digital presence packages - everything 
+              your business needs to succeed online.
             </p>
             <div className="space-y-4">
               <div className="flex items-center">
                 <div className="w-4 h-4 bg-blue-600 rounded-full mr-4"></div>
-                <span className="text-gray-700">Modern Technologies & Best Practices</span>
+                <span className="text-gray-700">Custom Web & Software Development</span>
               </div>
               <div className="flex items-center">
                 <div className="w-4 h-4 bg-blue-600 rounded-full mr-4"></div>
-                <span className="text-gray-700">Agile Development Process</span>
+                <span className="text-gray-700">Google Analytics & Performance Tracking</span>
               </div>
               <div className="flex items-center">
                 <div className="w-4 h-4 bg-blue-600 rounded-full mr-4"></div>
-                <span className="text-gray-700">24/7 Support & Maintenance</span>
+                <span className="text-gray-700">SEO & Online Visibility Solutions</span>
               </div>
               <div className="flex items-center">
                 <div className="w-4 h-4 bg-blue-600 rounded-full mr-4"></div>
-                <span className="text-gray-700">Transparent Communication</span>
+                <span className="text-gray-700">Complete Digital Presence Packages</span>
               </div>
             </div>
           </div>
@@ -84,8 +85,9 @@ const About: React.FC = () => {
               <div className="bg-white rounded-xl shadow-lg p-6">
                 <h3 className="text-2xl font-semibold text-gray-900 mb-4">Our Mission</h3>
                 <p className="text-gray-600 mb-6">
-                  To empower businesses with cutting-edge web solutions that drive growth, 
-                  enhance user experience, and deliver measurable results.
+                  To provide comprehensive web development, software solutions, and digital presence services 
+                  that empower businesses to establish, grow, and optimize their online success through 
+                  data-driven strategies and cutting-edge technology.
                 </p>
                 <div className="flex items-center">
                   <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
@@ -93,7 +95,7 @@ const About: React.FC = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900">Quality First</h4>
-                    <p className="text-sm text-gray-600">Every project meets the highest standards</p>
+                    <p className="text-sm text-gray-600">Every solution meets professional standards</p>
                   </div>
                 </div>
               </div>
@@ -124,7 +126,7 @@ const About: React.FC = () => {
             Meet Our Team
           </h3>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Talented professionals who bring your vision to life
+            Professional experts dedicated to your technical success
           </p>
         </div>
 

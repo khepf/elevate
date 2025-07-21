@@ -1,6 +1,6 @@
-# Elevate Web Solutions - Company Website
+# Queen City Technical Services - Company Website
 
-A modern, responsive website for a 3rd party web development company built with React, TypeScript, and Vite.
+A modern, responsive website for Queen City Technical Services (QCTS) specializing in web development, custom software solutions, Google Analytics implementation, and comprehensive digital presence services.
 
 ## Features
 
@@ -11,14 +11,23 @@ A modern, responsive website for a 3rd party web development company built with 
 - **Component-based**: Modular React components for easy maintenance
 - **Performance Optimized**: Built with Vite for fast development and builds
 
+## Services Highlighted
+
+- **Web Development**: Custom websites and web applications
+- **Software Development**: Tailored software solutions for businesses
+- **Google Analytics**: Setup, configuration, and reporting
+- **SEO & Online Visibility**: Search engine optimization services
+- **Digital Presence Packages**: Complete online presence solutions
+- **Mobile-First Solutions**: Responsive designs for all devices
+
 ## Sections
 
 - **Header**: Navigation with mobile-friendly menu
-- **Hero**: Eye-catching introduction with call-to-action
-- **Services**: Showcase of web development services
-- **Portfolio**: Featured projects and case studies
-- **About**: Company information and team members
-- **Contact**: Contact form and business information
+- **Hero**: Introduction emphasizing web development and digital solutions
+- **Services**: Web development, software solutions, Google Analytics, SEO, and digital presence services
+- **Portfolio**: Featured projects showcasing web development and software solutions
+- **About**: Company information focused on digital expertise and team
+- **Contact**: Contact form and business information with digital service focus
 - **Footer**: Links and company details
 
 ## Tech Stack

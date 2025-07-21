@@ -9,11 +9,11 @@ const Footer: React.FC = () => {
           {/* Company Info */}
           <div>
             <h3 className="text-2xl font-bold text-blue-400 mb-4">
-              Elevate Web Solutions
+              Queen City Technical Services
             </h3>
             <p className="text-gray-400 mb-6">
-              Creating exceptional web experiences that drive business growth. 
-              Your success is our mission.
+              Web development, software solutions, and digital presence services 
+              for businesses ready to grow online.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-blue-400 transition duration-300">
@@ -45,22 +45,22 @@ const Footer: React.FC = () => {
               </li>
               <li>
                 <a href="#" className="hover:text-blue-400 transition duration-300">
-                  Mobile Apps
+                  Software Development
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:text-blue-400 transition duration-300">
-                  E-Commerce
+                  Google Analytics
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:text-blue-400 transition duration-300">
-                  UI/UX Design
+                  SEO Services
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:text-blue-400 transition duration-300">
-                  Consulting
+                  Digital Presence
                 </a>
               </li>
             </ul>
@@ -102,17 +102,16 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Contact</h4>
             <ul className="space-y-2 text-gray-400">
-              <li>123 Web Street</li>
-              <li>Digital City, DC 12345</li>
-              <li>Phone: +1 (555) 123-4567</li>
-              <li>Email: contact@webdevpro.com</li>
+              <li>Cincinnati, OH Metro Area</li>
+              <li>Phone: +1 (513) 555-QCTS</li>
+              <li>Email: info@qcts.tech</li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
-            © 2025 Elevate Web Solutions. All rights reserved.
+            © 2025 Queen City Technical Services. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="text-gray-400 hover:text-blue-400 transition duration-300 text-sm">

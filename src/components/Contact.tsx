@@ -59,7 +59,7 @@ const Contact: React.FC = () => {
             Get In Touch
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Ready to start your project? Let's discuss how we can help bring your vision to life
+            Ready to grow your online presence? Let's discuss how our web development, software solutions, and digital services can help your business succeed
           </p>
         </div>
 
@@ -77,7 +77,7 @@ const Contact: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900">Email</h4>
-                  <p className="text-gray-600">elevatesalesandinquiries@gmail.com</p>
+                  <p className="text-gray-600">info@qcts.tech</p>
                 </div>
               </div>
               
@@ -87,7 +87,7 @@ const Contact: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900">Phone</h4>
-                  <p className="text-gray-600">+1 (513) 494-6777</p>
+                  <p className="text-gray-600">+1 (513) 555-QCTS (7287)</p>
                 </div>
               </div>
               
@@ -97,7 +97,7 @@ const Contact: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900">Address</h4>
-                  <p className="text-gray-600">7850 Five Mile Rd, Cincinnati, OH 45230</p>
+                  <p className="text-gray-600">Cincinnati, OH Metro Area</p>
                 </div>
               </div>
             </div>
@@ -120,19 +120,19 @@ const Contact: React.FC = () => {
               <ul className="space-y-3 text-gray-600">
                 <li className="flex items-center">
                   <div className="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
-                  Free consultation and project analysis
+                  Free website audit and Google Analytics setup
                 </li>
                 <li className="flex items-center">
                   <div className="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
-                  Transparent pricing with no hidden fees
+                  Complete digital presence packages
                 </li>
                 <li className="flex items-center">
                   <div className="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
-                  Dedicated project manager
+                  Custom software development expertise
                 </li>
                 <li className="flex items-center">
                   <div className="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
-                  Ongoing support and maintenance
+                  SEO optimization and online visibility
                 </li>
               </ul>
             </div>

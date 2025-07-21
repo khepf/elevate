@@ -9,12 +9,12 @@ const Hero: React.FC = () => {
           {/* Text Content */}
           <div className="lg:w-1/2 mb-10 lg:mb-0">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
-              Build Your Dream
-              <span className="text-blue-600 block">Website Today</span>
+              Web Development &
+              <span className="text-blue-600 block">Digital Solutions</span>
             </h1>
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-              We create stunning, responsive websites that drive results. From concept to launch, 
-              we deliver exceptional web experiences that help your business grow.
+              Queen City Technical Services specializes in web development, custom software solutions, 
+              Google Analytics setup, and comprehensive digital services to establish and grow your online presence.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <button 
@@ -44,8 +44,8 @@ const Hero: React.FC = () => {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
                       </svg>
                     </div>
-                    <h3 className="text-lg font-semibold text-gray-900">Code Excellence</h3>
-                    <p className="text-sm text-gray-600 mt-2">Clean, modern, scalable</p>
+                    <h3 className="text-lg font-semibold text-gray-900">Technical Excellence</h3>
+                    <p className="text-sm text-gray-600 mt-2">Professional, reliable, scalable</p>
                   </div>
                 </div>
               </div>

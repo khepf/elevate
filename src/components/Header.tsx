@@ -16,7 +16,7 @@ const Header: React.FC = () => {
           <div className="flex items-center py-2 px-4 relative z-10">
             <img 
               src="/elevate-logo.jpg" 
-              alt="Elevate Web Solutions" 
+              alt="Queen City Technical Services" 
               className="h-28 w-auto relative top-8"
             />
           </div>

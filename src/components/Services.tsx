@@ -6,38 +6,38 @@ const Services: React.FC = () => {
     {
       icon: <Code className="h-8 w-8" />,
       title: "Web Development",
-      description: "Custom websites and web applications built with modern technologies and best practices.",
-      features: ["React & Vue.js", "Node.js & Express", "Database Integration", "API Development"]
+      description: "Custom websites and web applications built with modern technologies and industry best practices.",
+      features: ["React & Modern Frameworks", "Backend Development", "Database Integration", "API Development"]
     },
     {
       icon: <Smartphone className="h-8 w-8" />,
-      title: "Mobile-First Design",
-      description: "Responsive designs that look perfect on all devices, from mobile phones to desktops.",
-      features: ["Responsive Design", "Touch-Friendly UI", "Fast Loading", "Cross-Platform"]
+      title: "Mobile-First Solutions",
+      description: "Responsive designs optimized for all devices, ensuring seamless user experiences across platforms.",
+      features: ["Responsive Design", "Mobile Optimization", "Performance Tuning", "Cross-Platform"]
     },
     {
       icon: <Globe className="h-8 w-8" />,
       title: "E-Commerce Solutions",
-      description: "Complete online stores with secure payment processing and inventory management.",
-      features: ["Shopping Cart", "Payment Gateway", "Inventory System", "Admin Dashboard"]
+      description: "Complete online business solutions with secure payment processing and comprehensive management tools.",
+      features: ["Online Stores", "Payment Integration", "Inventory Management", "Analytics Dashboard"]
     },
     {
       icon: <Zap className="h-8 w-8" />,
-      title: "Performance Optimization",
-      description: "Lightning-fast websites optimized for speed, SEO, and user experience.",
-      features: ["Speed Optimization", "SEO Ready", "Analytics Setup", "Performance Monitoring"]
+      title: "Technical Consulting",
+      description: "Expert guidance on technology decisions, system architecture, and digital transformation strategies.",
+      features: ["Technology Assessment", "System Architecture", "Performance Analysis", "Strategic Planning"]
     },
     {
       icon: <Shield className="h-8 w-8" />,
-      title: "Security & Maintenance",
-      description: "Ongoing security updates, backups, and maintenance to keep your site secure.",
-      features: ["Security Updates", "Regular Backups", "Monitoring", "Bug Fixes"]
+      title: "Maintenance & Support",
+      description: "Ongoing technical support, security updates, and system maintenance to ensure optimal performance.",
+      features: ["Security Updates", "System Monitoring", "Regular Maintenance", "Technical Support"]
     },
     {
       icon: <Users className="h-8 w-8" />,
-      title: "Consulting & Support",
-      description: "Expert guidance and 24/7 support to help your business succeed online.",
-      features: ["Strategic Planning", "24/7 Support", "Training", "Growth Consulting"]
+      title: "Training & Support",
+      description: "Comprehensive training and ongoing support to help your team maximize technology investments.",
+      features: ["Staff Training", "Documentation", "Ongoing Support", "Best Practices"]
     }
   ]
 
@@ -49,7 +49,7 @@ const Services: React.FC = () => {
             Our Services
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            We offer comprehensive web development services to help your business thrive online
+            We offer comprehensive technical services to help Cincinnati businesses thrive in the digital age
           </p>
         </div>
 

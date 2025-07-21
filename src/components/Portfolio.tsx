@@ -4,49 +4,49 @@ const Portfolio: React.FC = () => {
   const projects = [
     {
       title: "E-Commerce Platform",
-      description: "Modern e-commerce solution with React, Node.js, and MongoDB. Features include real-time inventory, secure payments, and admin dashboard.",
+      description: "Complete e-commerce solution with React, Node.js, payment processing, inventory management, and Google Analytics integration for comprehensive business insights.",
       image: "/ecommerce-platform.jpg",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
+      technologies: ["React", "Node.js", "MongoDB", "Google Analytics"],
       demoUrl: "#",
       codeUrl: "#"
     },
     {
-      title: "Corporate Website",
-      description: "Professional corporate website with CMS integration, SEO optimization, and responsive design for a Fortune 500 company.",
+      title: "Business Website with Analytics",
+      description: "Professional business website with custom CMS, SEO optimization, Google Analytics setup, and conversion tracking for data-driven growth.",
       image: "/corporate-website.jpg",
-      technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Prisma"],
+      technologies: ["Next.js", "TypeScript", "Google Analytics", "SEO"],
       demoUrl: "#",
       codeUrl: "#"
     },
     {
-      title: "SaaS Dashboard",
-      description: "Analytics dashboard for SaaS companies with real-time data visualization, user management, and billing integration.",
+      title: "Custom Software Solution",
+      description: "Tailored inventory management software with automated reporting, real-time tracking, and integration with existing business systems.",
       image: "/saas-dashboard.jpg",
-      technologies: ["Vue.js", "Express", "PostgreSQL", "Chart.js"],
+      technologies: ["React", "Python", "PostgreSQL", "API Integration"],
       demoUrl: "#",
       codeUrl: "#"
     },
     {
-      title: "Restaurant App",
-      description: "Full-stack restaurant management app with online ordering, table reservations, and kitchen management system.",
+      title: "Restaurant Digital Presence",
+      description: "Complete digital package including website, online ordering system, social media setup, and Google Analytics for customer behavior tracking.",
       image: "/restaurant-app.jpg",
-      technologies: ["React Native", "Firebase", "Node.js", "Socket.io"],
+      technologies: ["React", "Firebase", "Google Analytics", "Social Media"],
       demoUrl: "#",
       codeUrl: "#"
     },
     {
       title: "Real Estate Platform",
-      description: "Property listing platform with advanced search, virtual tours, and integrated CRM for real estate agents.",
+      description: "Property listing website with advanced search, lead tracking, Google Analytics conversion goals, and automated email marketing integration.",
       image: "/realestate-platform.jpg",
-      technologies: ["Angular", "Django", "PostgreSQL", "AWS"],
+      technologies: ["Vue.js", "Node.js", "Google Analytics", "Email Marketing"],
       demoUrl: "#",
       codeUrl: "#"
     },
     {
       title: "Educational Platform",
-      description: "Online learning platform with video streaming, progress tracking, and interactive quizzes for educational institutions.",
+      description: "Online learning platform with student progress tracking, payment processing, and comprehensive analytics dashboard for course performance insights.",
       image: "/educational-platform.jpg",
-      technologies: ["React", "Express", "MongoDB", "WebRTC"],
+      technologies: ["React", "Express", "Analytics Dashboard", "Payment Gateway"],
       demoUrl: "#",
       codeUrl: "#"
     }
@@ -57,10 +57,10 @@ const Portfolio: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Our Portfolio
+            Our Work
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Discover some of our recent projects and see how we've helped businesses succeed online
+            Recent web development, software solutions, and digital presence projects that helped businesses grow online
           </p>
         </div>
 
@@ -68,7 +68,7 @@ const Portfolio: React.FC = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 group h-96"
+              className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 group h-[450px]"
             >
               <div className="relative overflow-hidden h-48 group-hover:h-full transition-all duration-300">
                 <img
