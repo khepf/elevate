@@ -5,9 +5,15 @@ import Portfolio from './components/Portfolio'
 import About from './components/About'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import { useAnalytics } from './hooks/useAnalytics'
+import { useScrollTracking } from './hooks/useScrollTracking'
 import './App.css'
 
 function App() {
+  // Initialize analytics and scroll tracking
+  useAnalytics();
+  useScrollTracking();
+
   return (
     <div className="App">
       <Header />

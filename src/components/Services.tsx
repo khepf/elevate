@@ -1,5 +1,6 @@
 import React from 'react'
 import { Code, Settings, BarChart } from 'lucide-react'
+import { trackEvent } from '../utils/analytics'
 
 const Services: React.FC = () => {
   const services = [
@@ -39,7 +40,8 @@ const Services: React.FC = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-gray-50 rounded-xl p-8 hover:shadow-lg transition duration-300 group"
+              className="bg-gray-50 rounded-xl p-8 hover:shadow-lg transition duration-300 group cursor-pointer"
+              onClick={() => trackEvent('click', 'service_interest', service.title)}
             >
               <div className="text-blue-600 mb-4 group-hover:scale-110 transition duration-300">
                 {service.icon}

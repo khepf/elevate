@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Mail, Phone, MapPin, Send } from 'lucide-react'
 import emailjs from '@emailjs/browser'
+import { trackFormSubmission } from '../utils/analytics'
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -43,9 +44,11 @@ const Contact: React.FC = () => {
       
       setSubmitStatus('success')
       setFormData({ name: '', email: '', subject: '', message: '' })
+      trackFormSubmission('Contact Form', true)
     } catch (error) {
       console.error('Email sending failed:', error)
       setSubmitStatus('error')
+      trackFormSubmission('Contact Form', false)
     } finally {
       setIsSubmitting(false)
     }

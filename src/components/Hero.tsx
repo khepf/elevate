@@ -1,5 +1,6 @@
 import React from 'react'
 import { ArrowRight } from 'lucide-react'
+import { trackButtonClick } from '../utils/analytics'
 
 const Hero: React.FC = () => {
   return (
@@ -18,14 +19,20 @@ const Hero: React.FC = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <button 
-                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+                onClick={() => {
+                  trackButtonClick('Get Started', 'Hero');
+                  document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+                }}
                 className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-300 flex items-center justify-center"
               >
                 Get Started
                 <ArrowRight className="ml-2 h-5 w-5" />
               </button>
               <button 
-                onClick={() => document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' })}
+                onClick={() => {
+                  trackButtonClick('View Portfolio', 'Hero');
+                  document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' });
+                }}
                 className="border-2 border-blue-600 text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-600 hover:text-white transition duration-300"
               >
                 View Portfolio

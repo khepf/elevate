@@ -1,4 +1,5 @@
 import React from 'react'
+import { trackEvent } from '../utils/analytics'
 
 const Portfolio: React.FC = () => {
   const projects = [
@@ -68,7 +69,8 @@ const Portfolio: React.FC = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 group h-[450px]"
+              className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 group h-[450px] cursor-pointer"
+              onClick={() => trackEvent('click', 'portfolio_view', project.title)}
             >
               <div className="relative overflow-hidden h-48 group-hover:h-full transition-all duration-300">
                 <img

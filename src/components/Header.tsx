@@ -1,11 +1,16 @@
 import React, { useState } from 'react'
 import { Menu, X } from 'lucide-react'
+import { trackNavigation } from '../utils/analytics'
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
+  }
+
+  const handleNavClick = (sectionName: string) => {
+    trackNavigation(sectionName);
   }
 
   return (
@@ -23,19 +28,39 @@ const Header: React.FC = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8 lg:space-x-12">
-            <a href="#home" className="text-gray-700 hover:text-blue-600 transition duration-300 px-3 py-2 rounded-md hover:bg-blue-50">
+            <a 
+              href="#home" 
+              onClick={() => handleNavClick('Home')}
+              className="text-gray-700 hover:text-blue-600 transition duration-300 px-3 py-2 rounded-md hover:bg-blue-50"
+            >
               Home
             </a>
-            <a href="#services" className="text-gray-700 hover:text-blue-600 transition duration-300 px-3 py-2 rounded-md hover:bg-blue-50">
+            <a 
+              href="#services" 
+              onClick={() => handleNavClick('Services')}
+              className="text-gray-700 hover:text-blue-600 transition duration-300 px-3 py-2 rounded-md hover:bg-blue-50"
+            >
               Services
             </a>
-            <a href="#portfolio" className="text-gray-700 hover:text-blue-600 transition duration-300 px-3 py-2 rounded-md hover:bg-blue-50">
+            <a 
+              href="#portfolio" 
+              onClick={() => handleNavClick('Portfolio')}
+              className="text-gray-700 hover:text-blue-600 transition duration-300 px-3 py-2 rounded-md hover:bg-blue-50"
+            >
               Portfolio
             </a>
-            <a href="#about" className="text-gray-700 hover:text-blue-600 transition duration-300 px-3 py-2 rounded-md hover:bg-blue-50">
+            <a 
+              href="#about" 
+              onClick={() => handleNavClick('About')}
+              className="text-gray-700 hover:text-blue-600 transition duration-300 px-3 py-2 rounded-md hover:bg-blue-50"
+            >
               About
             </a>
-            <a href="#contact" className="text-gray-700 hover:text-blue-600 transition duration-300 px-3 py-2 rounded-md hover:bg-blue-50">
+            <a 
+              href="#contact" 
+              onClick={() => handleNavClick('Contact')}
+              className="text-gray-700 hover:text-blue-600 transition duration-300 px-3 py-2 rounded-md hover:bg-blue-50"
+            >
               Contact
             </a>
           </nav>
@@ -61,35 +86,50 @@ const Header: React.FC = () => {
               <a
                 href="#home"
                 className="text-gray-700 hover:text-blue-600 transition duration-300 py-2"
-                onClick={toggleMenu}
+                onClick={() => {
+                  handleNavClick('Home');
+                  toggleMenu();
+                }}
               >
                 Home
               </a>
               <a
                 href="#services"
                 className="text-gray-700 hover:text-blue-600 transition duration-300 py-2"
-                onClick={toggleMenu}
+                onClick={() => {
+                  handleNavClick('Services');
+                  toggleMenu();
+                }}
               >
                 Services
               </a>
               <a
                 href="#portfolio"
                 className="text-gray-700 hover:text-blue-600 transition duration-300 py-2"
-                onClick={toggleMenu}
+                onClick={() => {
+                  handleNavClick('Portfolio');
+                  toggleMenu();
+                }}
               >
                 Portfolio
               </a>
               <a
                 href="#about"
                 className="text-gray-700 hover:text-blue-600 transition duration-300 py-2"
-                onClick={toggleMenu}
+                onClick={() => {
+                  handleNavClick('About');
+                  toggleMenu();
+                }}
               >
                 About
               </a>
               <a
                 href="#contact"
                 className="text-gray-700 hover:text-blue-600 transition duration-300 py-2"
-                onClick={toggleMenu}
+                onClick={() => {
+                  handleNavClick('Contact');
+                  toggleMenu();
+                }}
               >
                 Contact
               </a>

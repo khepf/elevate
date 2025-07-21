@@ -5,6 +5,18 @@
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>QCTS - Web Development, Software Solutions & Google Analytics Services</title>
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SZC1NHB38C"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-SZC1NHB38C', {
+        page_title: document.title,
+        page_location: window.location.href
+      });
+    </script>
   </head>
   <body>
     <div id="root"></div>
