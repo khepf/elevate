@@ -20,26 +20,26 @@ const About: React.FC = () => {
     }
   ]
 
-  const teamMembers = [
-    {
-      name: "Michael Healy",
-      role: "Lead Web Developer",
-      image: "/lead-developer.jpg",
-      bio: "Senior web developer with 10+ years of experience in React, Node.js, and modern web technologies. Specializes in scalable web applications."
-    },
-    {
-      name: "Jennifer Whitmore",
-      role: "Analytics & SEO Specialist",
-      image: "/ui-ux-designer.jpg",
-      bio: "Expert in Google Analytics implementation, SEO optimization, and digital marketing strategies to maximize online visibility and conversions."
-    },
-    {
-      name: "Robert Thompson",
-      role: "Software Solutions Manager",
-      image: "/project-manager.jpg",
-      bio: "Dedicated to delivering custom software solutions and managing digital presence projects from conception to successful implementation."
-    }
-  ]
+  // const teamMembers = [
+  //   {
+  //     name: "Michael Healy",
+  //     role: "Lead Web Developer",
+  //     image: "/lead-developer.jpg",
+  //     bio: "Senior web developer with 10+ years of experience in React, Node.js, and modern web technologies. Specializes in scalable web applications."
+  //   },
+  //   {
+  //     name: "Jennifer Whitmore",
+  //     role: "Analytics & SEO Specialist",
+  //     image: "/ui-ux-designer.jpg",
+  //     bio: "Expert in Google Analytics implementation, SEO optimization, and digital marketing strategies to maximize online visibility and conversions."
+  //   },
+  //   {
+  //     name: "Robert Thompson",
+  //     role: "Software Solutions Manager",
+  //     image: "/project-manager.jpg",
+  //     bio: "Dedicated to delivering custom software solutions and managing digital presence projects from conception to successful implementation."
+  //   }
+  // ]
 
   return (
     <section id="about" className="py-20 bg-white">
@@ -121,7 +121,7 @@ const About: React.FC = () => {
         </div>
 
         {/* Team Section */}
-        <div className="text-center mb-16">
+        {/* <div className="text-center mb-16">
           <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Meet Our Team
           </h3>
@@ -151,7 +151,7 @@ const About: React.FC = () => {
               </p>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
   )
