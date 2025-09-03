@@ -63,6 +63,13 @@ const Header: React.FC = () => {
             >
               Contact
             </a>
+            <a 
+              href="#purchase" 
+              onClick={() => handleNavClick('Purchase')}
+              className="text-gray-700 hover:text-blue-600 transition duration-300 px-3 py-2 rounded-md hover:bg-blue-50"
+            >
+              Purchase
+            </a>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -132,6 +139,16 @@ const Header: React.FC = () => {
                 }}
               >
                 Contact
+              </a>
+              <a
+                href="#purchase"
+                className="text-gray-700 hover:text-blue-600 transition duration-300 py-2"
+                onClick={() => {
+                  handleNavClick('Purchase');
+                  toggleMenu();
+                }}
+              >
+                Purchase
               </a>
             </div>
           </nav>
