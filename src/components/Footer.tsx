@@ -52,7 +52,7 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Contact</h4>
             <ul className="space-y-2 text-gray-400">
-              <li>7850 Five Mile Rd, Cincinnati, OH 45230</li>
+              <li>2476 Little Dry Run Rd, Cincinnati, OH 45244</li>
               <li>Phone: +1 (513) 494-6777</li>
               <li>Email: info@queencitytechnicalservices.com</li>
             </ul>

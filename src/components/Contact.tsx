@@ -100,7 +100,7 @@ const Contact: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900">Address</h4>
-                  <p className="text-gray-600">7850 Five Mile Rd, Cincinnati, OH 45230</p>
+                  <p className="text-gray-600">2476 Little Dry Run Rd, Cincinnati, OH 45244</p>
                 </div>
               </div>
             </div>
