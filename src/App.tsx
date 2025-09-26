@@ -11,7 +11,6 @@ import { useScrollTracking } from './hooks/useScrollTracking'
 import './App.css'
 
 function App() {
-  // Initialize analytics and scroll tracking
   useAnalytics();
   useScrollTracking();
 
