@@ -46,6 +46,13 @@ const Header: React.FC = () => {
               Services
             </Link>
             <Link 
+              to="/installs" 
+              onClick={() => handleNavClick('Installs')}
+              className="text-gray-700 hover:text-blue-600 transition duration-300 px-3 py-2 rounded-md hover:bg-blue-50"
+            >
+              Installs
+            </Link>
+            <Link 
               to="/portfolio" 
               onClick={() => handleNavClick('Portfolio')}
               className="text-gray-700 hover:text-blue-600 transition duration-300 px-3 py-2 rounded-md hover:bg-blue-50"
@@ -112,6 +119,16 @@ const Header: React.FC = () => {
                 }}
               >
                 Services
+              </Link>
+              <Link
+                to="/installs"
+                className="text-gray-700 hover:text-blue-600 transition duration-300 py-2"
+                onClick={() => {
+                  handleNavClick('Installs');
+                  toggleMenu();
+                }}
+              >
+                Installs
               </Link>
               <Link
                 to="/portfolio"

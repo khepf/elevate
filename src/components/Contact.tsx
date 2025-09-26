@@ -7,6 +7,7 @@ const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
+    phone: '',
     subject: '',
     message: ''
   })
@@ -35,6 +36,7 @@ const Contact: React.FC = () => {
       const templateParams = {
         from_name: formData.name,
         from_email: formData.email,
+        from_phone: formData.phone,
         subject: formData.subject,
         message: formData.message,
         to_email: import.meta.env.VITE_CONTACT_EMAIL
@@ -43,7 +45,7 @@ const Contact: React.FC = () => {
       await emailjs.send(serviceID, templateID, templateParams, publicKey)
       
       setSubmitStatus('success')
-      setFormData({ name: '', email: '', subject: '', message: '' })
+      setFormData({ name: '', email: '', phone: '', subject: '', message: '' })
       trackFormSubmission('Contact Form', true)
     } catch (error) {
       console.error('Email sending failed:', error)
@@ -177,6 +179,22 @@ const Contact: React.FC = () => {
                   required
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-300"
                   placeholder="Enter your email address"
+                />
+              </div>
+              
+              <div>
+                <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
+                  Phone Number
+                </label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleInputChange}
+                  required
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-300"
+                  placeholder="Enter your phone number"
                 />
               </div>
               
