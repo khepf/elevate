@@ -51,14 +51,15 @@ const About: React.FC = () => {
               About Queen City Technical Services
             </h2>
             <p className="text-xl text-gray-600 mb-6">
-              We're a dedicated team of web developers and digital specialists focused on helping businesses 
-              establish and grow their online presence through custom software, analytics, and comprehensive digital solutions.
+              We're a dedicated team of developers and IT specialists focused on helping people and businesses 
+              establish and grow their online presence through custom software, analytics, comprehensive digital solutions, 
+              and professional in-home technology setup services.
             </p>
             <p className="text-gray-600 mb-8">
-              Since our founding, we've been committed to helping businesses leverage the power of the internet 
+              Since our founding, we've been committed to helping businesses and individuals leverage technology 
               to achieve their goals. Our expertise spans web development, custom software development, 
-              Google Analytics implementation, SEO, and complete digital presence packages - everything 
-              your business needs to succeed online.
+              Google Analytics implementation, SEO, complete digital presence packages, and professional 
+              in-home computer and printer installation services - everything you need to succeed online and at home.
             </p>
             <div className="space-y-4">
               <div className="flex items-center">
@@ -72,6 +73,10 @@ const About: React.FC = () => {
               <div className="flex items-center">
                 <div className="w-4 h-4 bg-blue-600 rounded-full mr-4"></div>
                 <span className="text-gray-700">SEO & Online Visibility Solutions</span>
+              </div>
+              <div className="flex items-center">
+                <div className="w-4 h-4 bg-blue-600 rounded-full mr-4"></div>
+                <span className="text-gray-700">In-Home Computer & Printer Setup</span>
               </div>
               <div className="flex items-center">
                 <div className="w-4 h-4 bg-blue-600 rounded-full mr-4"></div>
