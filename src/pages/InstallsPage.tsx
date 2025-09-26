@@ -77,9 +77,10 @@ const InstallsPage: React.FC = () => {
             <div className="flex justify-center">
               <a 
                 href="tel:+15134946777"
-                className="bg-white/10 backdrop-blur-md border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors"
+                className="bg-white/10 backdrop-blur-md border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors text-center"
               >
-                📞 Call Now for Service
+                <div>📞 Free Consultation</div>
+                <div className="text-sm mt-1">(513) 494-6777</div>
               </a>
             </div>
           </div>
