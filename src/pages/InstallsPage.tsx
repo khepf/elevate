@@ -59,19 +59,19 @@ const InstallsPage: React.FC = () => {
 
   const benefits = [
     {
-      icon: <CheckCircle className="h-6 w-6 text-green-500" />,
-      title: "Professional Service",
-      description: "Certified technicians with years of experience"
+      icon: <CheckCircle className="h-8 w-8 text-green-500" />,
+      title: "No More Tech Headaches",
+      description: "Stop struggling with confusing setup guides and error messages. We handle all the technical stuff."
     },
     {
-      icon: <Clock className="h-6 w-6 text-blue-500" />,
-      title: "Convenient Scheduling",
-      description: "Flexible scheduling to fit your busy lifestyle"
+      icon: <Clock className="h-8 w-8 text-blue-500" />,
+      title: "We Come to You",
+      description: "No need to pack up your equipment or wait in store lines. We work in your home at your convenience."
     },
     {
-      icon: <Phone className="h-6 w-6 text-red-500" />,
-      title: "We Handle Everything",
-      description: "Setup, configuration, even the annoying phone calls"
+      icon: <Phone className="h-8 w-8 text-red-500" />,
+      title: "Personal Service You Can Trust",
+      description: "Local technicians who explain everything in plain English and treat your home with respect."
     }
   ]
 
@@ -82,19 +82,51 @@ const InstallsPage: React.FC = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              In-Home Computer & Printer Setup
+              Stress-Free Computer & Technology Setup
             </h1>
-            <p className="text-xl md:text-2xl mb-8 opacity-90">
-              Professional setup services in the comfort of your home. Get your new devices running smoothly with expert installation and configuration.
+            <p className="text-xl md:text-2xl mb-6 opacity-90">
+              Skip the frustration. Our experts come to your home and set up everything for you.
             </p>
-            <div className="flex justify-center">
+            <p className="text-lg mb-8 opacity-80">
+              ✓ No technical knowledge required ✓ Same-day service available ✓ 100% satisfaction guaranteed
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a 
                 href="tel:+15134946777"
-                className="bg-white/10 backdrop-blur-md border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors text-center"
+                className="bg-white text-blue-600 px-10 py-4 rounded-lg text-xl font-bold hover:bg-gray-100 transition-colors"
               >
-                <div>📞 Free Consultation</div>
-                <div className="text-sm mt-1">(513) 494-6777</div>
+                📞 Call Now: (513) 494-6777
               </a>
+              <a 
+                href="#pricing"
+                className="bg-white/10 backdrop-blur-md border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors"
+              >
+                See Pricing
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Trust Signals */}
+      <section className="py-12 bg-blue-50 border-b">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div>
+              <div className="text-2xl font-bold text-blue-600">500+</div>
+              <div className="text-sm text-gray-600">Happy Customers</div>
+            </div>
+            <div>
+              <div className="text-2xl font-bold text-blue-600">Same Day</div>
+              <div className="text-sm text-gray-600">Service Available</div>
+            </div>
+            <div>
+              <div className="text-2xl font-bold text-blue-600">20+ Years</div>
+              <div className="text-sm text-gray-600">Experience</div>
+            </div>
+            <div>
+              <div className="text-2xl font-bold text-blue-600">100%</div>
+              <div className="text-sm text-gray-600">Satisfaction Guarantee</div>
             </div>
           </div>
         </div>
@@ -233,7 +265,7 @@ const InstallsPage: React.FC = () => {
       </section>
 
       {/* Pricing Section */}
-      <section className="py-20 bg-gray-50">
+      <section id="pricing" className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -300,25 +332,29 @@ const InstallsPage: React.FC = () => {
       <section className="py-20 bg-blue-600 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Ready to Get Started?
+            Ready to End Your Tech Frustration?
           </h2>
-          <p className="text-xl mb-8 opacity-90">
-            Schedule your in-home setup service today and start enjoying your new technology worry-free.
+          <p className="text-xl mb-4 opacity-90">
+            Call now and we can often schedule same-day service
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a 
-              href="/contact" 
-              className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
-            >
-              Free Consultation
-            </a>
+          <p className="text-lg mb-8 opacity-80">
+            Free consultation • No obligation • 100% satisfaction guaranteed
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-lg mx-auto">
             <a 
               href="tel:+15134946777" 
-              className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors"
+              className="bg-white text-blue-600 px-8 py-4 rounded-lg text-xl font-bold hover:bg-gray-100 transition-colors flex items-center justify-center"
             >
-              Call Now
+              📞 Call (513) 494-6777
+            </a>
+            <a 
+              href="/contact" 
+              className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors"
+            >
+              Schedule Online
             </a>
           </div>
+          <p className="text-sm mt-4 opacity-75">Available 7 days a week</p>
         </div>
       </section>
     </div>
