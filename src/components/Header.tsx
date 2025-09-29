@@ -19,12 +19,12 @@ const Header: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-14">
           {/* Logo */}
-          <div className="flex items-center relative z-10">
+          <div className="items-center relative z-10 hidden sm:flex md:hidden lg:flex">
             <Link to="/" onClick={() => handleNavClick('Home')}>
               <img 
                 src="/qcts-logo.png" 
                 alt="Queen City Technical Services" 
-                className="h-16 w-auto relative top-6 hover:opacity-80 transition-opacity"
+                className="h-14 w-auto relative top-0 hover:opacity-80 transition-opacity"
               />
             </Link>
           </div>

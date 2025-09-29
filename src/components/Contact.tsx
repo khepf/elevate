@@ -125,19 +125,19 @@ const Contact: React.FC = () => {
               <ul className="space-y-3 text-gray-600">
                 <li className="flex items-center">
                   <div className="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
-                  Free website audit and Google Analytics walkthrough
+                  Free consultation and technology walkthrough
                 </li>
                 <li className="flex items-center">
                   <div className="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
-                  Complete digital presence packages
+                  Clear and upfront pricing
                 </li>
                 <li className="flex items-center">
                   <div className="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
-                  Custom software development expertise
+                  20+ years of technology expertise
                 </li>
                 <li className="flex items-center">
                   <div className="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
-                  SEO optimization and online visibility
+                  Friendly service right to your doorstep
                 </li>
               </ul>
             </div>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Monitor, Printer, Home, CheckCircle, Clock, MapPin } from 'lucide-react'
+import { Monitor, Printer, Home, CheckCircle, Clock, Phone } from 'lucide-react'
 
 const InstallsPage: React.FC = () => {
   const services = [
@@ -41,6 +41,19 @@ const InstallsPage: React.FC = () => {
         "Smart home device integration",
         "Troubleshooting and support"
       ]
+    },
+    {
+      icon: <Monitor className="h-8 w-8" />,
+      title: "Mobile Device Setup",
+      description: "Complete setup and configuration of smartphones and tablets",
+      features: [
+        "Phone and tablet activation",
+        "Account setup and configuration",
+        "App installation and organization",
+        "Data transfer from old device",
+        "Email and cloud setup",
+        "Security and privacy settings"
+      ]
     }
   ]
 
@@ -56,9 +69,9 @@ const InstallsPage: React.FC = () => {
       description: "Flexible scheduling to fit your busy lifestyle"
     },
     {
-      icon: <MapPin className="h-6 w-6 text-red-500" />,
-      title: "Service Area",
-      description: "Serving Charlotte, NC and surrounding areas"
+      icon: <Phone className="h-6 w-6 text-red-500" />,
+      title: "We Handle Everything",
+      description: "Setup, configuration, even the annoying phone calls"
     }
   ]
 
@@ -99,7 +112,7 @@ const InstallsPage: React.FC = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
             {services.map((service, index) => (
               <div key={index} className="bg-gray-50 rounded-xl p-6 hover:shadow-lg transition-shadow">
                 <div className="flex items-center mb-4">
@@ -135,29 +148,29 @@ const InstallsPage: React.FC = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Placeholder images - replace with actual images later */}
             <div className="bg-white rounded-xl overflow-hidden shadow-md">
-              <div className="h-48 bg-gray-200 flex items-center justify-center">
-                <div className="text-center text-gray-500">
-                  <Monitor className="h-12 w-12 mx-auto mb-2" />
-                  <p className="text-sm">Computer Setup Image</p>
-                  <p className="text-xs opacity-75">Placeholder - Add actual image</p>
-                </div>
+              <div className="h-48 bg-gray-200 flex items-center justify-center overflow-hidden">
+                <img 
+                  src="/home-office.jpg" 
+                  alt="Complete Home Office Setup" 
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="p-4">
-                <h3 className="font-semibold text-gray-900 mb-2">Desktop Computer Setup</h3>
-                <p className="text-sm text-gray-600">Professional workstation configuration</p>
+                <h3 className="font-semibold text-gray-900 mb-2">Complete Home Office Setup</h3>
+                <p className="text-sm text-gray-600">Computer, Printer, Wireless Router</p>
               </div>
             </div>
 
             <div className="bg-white rounded-xl overflow-hidden shadow-md">
-              <div className="h-48 bg-gray-200 flex items-center justify-center">
-                <div className="text-center text-gray-500">
-                  <Printer className="h-12 w-12 mx-auto mb-2" />
-                  <p className="text-sm">Printer Setup Image</p>
-                  <p className="text-xs opacity-75">Placeholder - Add actual image</p>
-                </div>
+              <div className="h-48 bg-gray-200 flex items-center justify-center overflow-hidden">
+                <img 
+                  src="/printer.jpg" 
+                  alt="Printer Setup Process" 
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="p-4">
                 <h3 className="font-semibold text-gray-900 mb-2">Printer Installation</h3>
@@ -166,16 +179,30 @@ const InstallsPage: React.FC = () => {
             </div>
 
             <div className="bg-white rounded-xl overflow-hidden shadow-md">
-              <div className="h-48 bg-gray-200 flex items-center justify-center">
-                <div className="text-center text-gray-500">
-                  <Home className="h-12 w-12 mx-auto mb-2" />
-                  <p className="text-sm">Home Office Image</p>
-                  <p className="text-xs opacity-75">Placeholder - Add actual image</p>
-                </div>
+              <div className="h-48 bg-gray-200 flex items-center justify-center overflow-hidden">
+                <img 
+                  src="/mobile-device.jpg" 
+                  alt="Mobile Device Setup Process" 
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="p-4">
-                <h3 className="font-semibold text-gray-900 mb-2">Home Office Setup</h3>
-                <p className="text-sm text-gray-600">Complete workspace configuration</p>
+                <h3 className="font-semibold text-gray-900 mb-2">Mobile Device Setup</h3>
+                <p className="text-sm text-gray-600">Smartphone and tablet configuration</p>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-xl overflow-hidden shadow-md">
+              <div className="h-48 bg-gray-200 flex items-center justify-center overflow-hidden">
+                <img 
+                  src="/wireless-router.jpg" 
+                  alt="Wireless Router Setup Process" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-4">
+                <h3 className="font-semibold text-gray-900 mb-2">Wireless Router Setup</h3>
+                <p className="text-sm text-gray-600">Network configuration and optimization</p>
               </div>
             </div>
           </div>
@@ -217,7 +244,7 @@ const InstallsPage: React.FC = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
             <div className="bg-white rounded-xl p-6 shadow-md">
               <h3 className="text-xl font-semibold text-gray-900 mb-4">New Computer Setup</h3>
               <div className="text-3xl font-bold text-blue-600 mb-4">$200</div>
@@ -253,6 +280,18 @@ const InstallsPage: React.FC = () => {
                 <li>• Test printing & calibration</li>
               </ul>
             </div>
+
+            <div className="bg-white rounded-xl p-6 shadow-md">
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Mobile Device Setup</h3>
+              <div className="text-3xl font-bold text-blue-600 mb-4">$200</div>
+              <ul className="space-y-2 text-sm text-gray-600">
+                <li>• Phone & tablet activation</li>
+                <li>• Account setup & configuration</li>
+                <li>• App installation & organization</li>
+                <li>• Data transfer from old device</li>
+                <li>• Email & cloud setup</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
@@ -271,7 +310,7 @@ const InstallsPage: React.FC = () => {
               href="/contact" 
               className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
             >
-              Schedule Service
+              Free Consultation
             </a>
             <a 
               href="tel:+15134946777" 
